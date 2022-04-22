@@ -1,0 +1,13 @@
+.App-header a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+  font-size: 20px;
+}
+ 
+.App-header a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
