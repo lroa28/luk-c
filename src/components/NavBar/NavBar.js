@@ -45,24 +45,18 @@ export const NavBar = () => {
   <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-
           <Avatar alt="logo" src="https://firebasestorage.googleapis.com/v0/b/lukc-ecarrito-npx.appspot.com/o/logooriginalnegro.jpg?alt=media&token=37c01104-a0c3-4478-b302-0987545f5ee7" />
-          
           <Typography variant="title" className={classes.title}>
             <Link aria-current="page" to={'/'}>_luk_c</Link>
           </Typography>
-       
         <div className={classes.title}>
           <Button 
-           aria-describedby={id} 
-           variant="contained" 
-           color="black" 
-           onClick={handleClick}
-          >
+          aria-describedby={id} 
+          variant="contained" 
+          color="black" 
+          onClick={handleClick}>
             Ver por Categorías
           </Button>
-
-
           <Menu
             id="simple-menu"
             anchorEl={anchorEl}
@@ -76,9 +70,7 @@ export const NavBar = () => {
             transformOrigin={{
               vertical: -50,
               horizontal: 'center',
-            }}
-            >
-
+            }}>
             <Popover
               id={id}
               open={open}
@@ -91,8 +83,7 @@ export const NavBar = () => {
               transformOrigin={{
                 vertical: 'top',
                 horizontal: 'center',
-              }}
-            >
+              }}>
               <MenuItem onClick={handleClose}>
                 <Link style={{ textDecoration: 'none', color: 'black' }} to={`/category/${buzos}`}>Buzos</Link>
               </MenuItem>
@@ -117,6 +108,5 @@ export const NavBar = () => {
         </Toolbar>
       </AppBar>
     </div>
-    
   );
 }

@@ -1,21 +1,16 @@
 import React, {useEffect, useState} from 'react';
-
 //Componentes
 import {ItemList} from '../ItemListContainer/components/ItemList/ItemList';
-
 //Router
 import {useParams} from 'react-router-dom';
-
 //Firebase
 import { dataBase } from '../../Firebase/firebase';
 
 export const ItemListContainer = () => {
     const [productos, setProductos] = useState([]);
     const {categoryId} = useParams();
-
     useEffect(() =>{
         const itemCollection = dataBase.collection("items");
-
         if (categoryId === undefined){
             itemCollection.get().then((querySnapshot) =>{
                 if(querySnapshot.size === 0){
@@ -47,7 +42,7 @@ export const ItemListContainer = () => {
         }
     }, [categoryId])
 
-      return <>
+    return <>
         <ItemList productos={productos}/>
     </>
 }

@@ -15,16 +15,14 @@ export const OrderMessage = () => {
     const {orderData, clear} = useContext(CartContext)
     const history = useHistory();
     const classes = useStyle();
-
     const goToIndex = () =>{
         clear()
         history.push(`/`)
     }
-
     return <div>
         <div className={classes.messageOrder}>
-          <Typography variant="h3">¡Gracias por la compra!</Typography>
-          <Typography className={classes.code}>Tu número de órden es: {orderData}</Typography>  
+            <Typography variant="h3">¡Gracias por la compra!</Typography>
+            <Typography className={classes.code}>Tu número de órden es: {orderData}</Typography>  
         </div>
         <div className={classes.container}>
             <Link>

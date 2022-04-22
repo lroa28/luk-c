@@ -1,11 +1,8 @@
 import React from 'react';
-
 //Styles
 import { ItemListStyles } from './ItemListStyles';
-
 //Componentes
 import { Item } from '../Item/Item';
-
 //Material-ui
 import { makeStyles } from '@material-ui/core/styles';
 import { LinearProgress, Grid } from '@material-ui/core';

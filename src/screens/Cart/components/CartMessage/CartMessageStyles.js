@@ -19,13 +19,11 @@ export const cartMessageStyles = theme => {
                 color: '#FFFFFF',
                 backgroundColor: '#5c4000',
             }
-
         },
         text:{
             textAlign: 'center',
             fontSize: '20px'
         },
-        
         buttonContainer:{
             display: 'flex',
             justifyContent: 'center',

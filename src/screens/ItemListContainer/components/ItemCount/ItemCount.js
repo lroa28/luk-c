@@ -11,7 +11,6 @@ import Typography from '@material-ui/core/Typography';
 import AddShoppingCartOutlinedIcon from '@material-ui/icons/AddShoppingCartOutlined';
 
 const useStyles = makeStyles((theme) => ItemCountStyles(theme));
-    
 export const ItemCount = stock => {
     const {onAdd} = stock;
     const [contador, setContador] = useState(1);
@@ -42,7 +41,6 @@ export const ItemCount = stock => {
                                 Agregar al Carrito
                                 <AddShoppingCartOutlinedIcon />
                             </Button>
-
                         </Paper>                     
                     </Grid>
                 </Grid>

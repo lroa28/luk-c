@@ -24,15 +24,12 @@ export const FinalizarCompra = props => {
         const { name, value } = event.target;
         setBuyerData({ ...buyerData, [name]: value });        
     }
-    
     const submitForm = event => {
         event.preventDefault();
         addOrderUpdateItems(buyerData);
     }
-
     const itemsToUpdate = dataBase.collection("productos")
     .where(firebase.firestore.FieldPath.documentId(), 'in', itemsCart.map(i => i.item.id));
-
     const createOrder = (buyer) => {
         const newOrder = {
             buyer: buyer,
@@ -42,7 +39,6 @@ export const FinalizarCompra = props => {
         }
         return newOrder;
     }
-  
     const addNewOrder = (buyer) => {
         const newOrder = createOrder(buyer);
         const orders = dataBase.collection("orders");
@@ -55,7 +51,6 @@ export const FinalizarCompra = props => {
             setError(true);
         }
     }
-
     const addOrderUpdateItems = (buyer) => {
         itemsToUpdate.get().then((querySnapshot) => {
         const batch = dataBase.batch();
@@ -67,7 +62,6 @@ export const FinalizarCompra = props => {
                     outOfStock.push({ ...docSnapshot.data(), id: docSnapshot.id });
                 }
             })
-
             if(outOfStock.length === 0){
                 batch.commit().then(() => {
                     addNewOrder(buyer);         
@@ -77,7 +71,6 @@ export const FinalizarCompra = props => {
             }
         })
     }
-
     return<>
         {
             <Card variant="outlined" className={classes.cardContainer}>
@@ -98,7 +91,4 @@ export const FinalizarCompra = props => {
             </Card>
         }
     </> 
-    
-    
-
 }

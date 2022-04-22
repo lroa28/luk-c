@@ -2,7 +2,6 @@ import React, { createContext, useEffect, useState } from 'react';
 
 export const CartContext = createContext();
 export const CartComponentContext = props => {
-
     const [itemsCart, setItemsCart] = useState([]);
     const [subTotal, setSubTotal] = useState(0);  
     const [itemsQuantity, setItemsQuantity] = useState(0);

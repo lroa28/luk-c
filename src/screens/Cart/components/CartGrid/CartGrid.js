@@ -47,7 +47,6 @@ export const CartGrid = () => {
           <TableCell align="center">Total:</TableCell>
           <TableCell  align="center">$ {subTotal}</TableCell>
           <TableCell></TableCell>
-
         </TableBody>
       </Table>
     </TableContainer>

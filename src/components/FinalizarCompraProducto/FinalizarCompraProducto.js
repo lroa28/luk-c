@@ -1,11 +1,8 @@
 import React from 'react';
-
 //Styles
 import { FinalizarCompraStyles } from './FinalizarCompraProductoStyles';
-
 //Router
 import { Link, useHistory } from 'react-router-dom';
-
 //Material-ui
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Button } from '@material-ui/core';
@@ -26,7 +23,6 @@ export const FinalizarCompraProducto = props =>{
                 justify="center"
                 alignItems="center" 
                 item xs={12}>
-                    
                 <Link to={`/cart`}>
                     <Button
                         onClick={() => history.push(`/cart`)}
@@ -40,7 +36,6 @@ export const FinalizarCompraProducto = props =>{
                     </Button>
                 </Link>
             </Grid>
-
         <Grid 
             container 
             justify="center"
@@ -52,8 +47,7 @@ export const FinalizarCompraProducto = props =>{
                 color="secondary"
                 size="large"
                 className={classes.buttons}
-                endIcon={<ArrowBackIcon>send</ArrowBackIcon>}
-            >
+                endIcon={<ArrowBackIcon>send</ArrowBackIcon>}>
                 Cancelar
             </Button>
         </Grid>

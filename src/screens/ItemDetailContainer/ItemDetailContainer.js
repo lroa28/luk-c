@@ -16,12 +16,11 @@ export const ItemDetailContainer = props => {
 
         item.get().then((doc) =>{
             if (!doc.exists){
-                console.log('No existe')
                 return;
             }
             setDetalleProducto([{id: doc.id, ...doc.data()}])
         }).catch((error) =>{
-            console.log('Error', error)
+
         })
     },)
 

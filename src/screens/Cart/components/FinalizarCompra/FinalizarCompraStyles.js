@@ -12,7 +12,6 @@ export const finalizarCompraStyles = theme => {
         buttonOk:{
             marginTop: '10px',
             textAlign: 'center',
-
         }
     })
 }

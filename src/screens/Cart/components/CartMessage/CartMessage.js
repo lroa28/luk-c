@@ -14,14 +14,13 @@ export const CartMessage = () =>{
     const history = useHistory();
 
     return <div className={classes.container}>
-        <Typography className={classes.text} variant="h3">Carrito vacío</Typography> 
+        <Typography className={classes.text} variant="h3">Tu Carrito está vacío!</Typography> 
         <div className={classes.buttonContainer}>
         <Button
             className={classes.button}
             variant="contained"
-            color="primary"
-            >
-            <Link style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }} onClick={() => history.push(`/`)}>Volver a la lista de productos</Link>
+            color="secondary">
+            <Link style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }} onClick={() => history.push(`/`)}>Volver al Inicio</Link>
             </Button>
         </div>
     </div>

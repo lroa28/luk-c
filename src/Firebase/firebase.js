@@ -1,6 +1,7 @@
 import firebase from "firebase/app";
 import 'firebase/firestore';
 
+//Datos de la Configuración del proyecto: lukc-ecarrito-npx, en Firebase.
 var firebaseConfig = {
     apiKey: "AIzaSyBPrnWg_Tt9ErHnJ5KuvOa0-v11wQQ2rxQ",
     authDomain: "lukc-ecarrito-npx.firebaseapp.com",

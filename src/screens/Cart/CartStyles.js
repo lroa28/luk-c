@@ -12,7 +12,6 @@ export const cartStyles = theme => {
             '& div:nth-child(1)':{
                 overflowX:'auto'
             }
-            
         }
     })
 }

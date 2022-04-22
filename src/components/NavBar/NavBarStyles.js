@@ -1,4 +1,3 @@
-
 export const NavBarStyles = ((theme) => ({
     root: {
       flexGrow: 1,

@@ -1,45 +1,40 @@
 # Lic. en sistemas de información, estudiante full stack en "CoderHouse" y emprendedora de textil.
-## Esta es mi primera página del curso React Js, año 2022.
+## Esta es mi primera página del Curso React Js, año 2022.
 
-📢Sitio web que busca mostrar mi Emprendimiento de Diseño textil y de modas, próximamente podrás realizar compras de prendas en "_luk_c"
+📢 Sitio web que busca mostrar el e-commerce del curso y mi Emprendimiento de Diseño textil y de modas, próximamente podrás realizar compras de prendas en "_luk_c"
 
 ### Tecnologías utilizadas 🛠️
 Herramientas y tecnologías utilizadas.
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)](#)
 [![AJAX](https://img.shields.io/badge/AJAX-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)](#)
-[![Visual Studio Code](https://code.visualstudio.com/)](#)
-
 
 ### CoderHouse E-Commerce "e-commerce-lukc" es una aplicación creada en el curso de CoderHouse desarrollo fullstack. La aplicación esta creada exclusivamente en ReactJS. 
-La aplicacion cuenta con los siguientes modulos y funcionalidades:
 
 ### Módulo
 Listado de productos obtenidos de una API creada exclusivamente para la aplicación en Firebase. 
-Filtrado por Categorías de los productos.
+Filtrado por categorías de los productos.
 Visualización del detalle del cada producto. Carrito de compras. Finalización de la compra ingresando los datos del cliente y mostrando el número de la orden de compra.
-
 
 ### Funcionalidades
 1. Navegabilidad utilizando react-router-dom.
 2. Navegalibidad entre categorias de productos y al detalle del producto.
-3. En los detalles del producto se muestra el precio, la cantidad a comprar (limitada al stock), los beneficios del producto, la categoría del mismo y el botón de añadir al carito.
-4. CartWidget completamente funcional, permite agregar y eliminar elementos del carrito a gusto, mostrando en todo momento el total de los productos a adquirir.
-5. Las colecciones creadas en Firestore son de productos.
+3. En los detalles del producto se muestra el precio, la cantidad a comprar (limitada al stock), los beneficios del producto, la categoría del mismo y el botón de añadir al carrito.
+4. CartWidget (página del Carrito de la compra) completamente funcional, permite agregar y eliminar elementos del carrito a gusto, mostrando en todo momento el total de los productos a adquirir. Finalmente, se muestra la orden de compra de la operación.
+5. Las colecciones de las fotos de los productos fueron creadas en Firestore.
 
 ### Librerias
-La librería de diseño que utilizada es Material UI: https://material-ui.com versión 4.11.4
-La base de datos utilizada es Firebase: https://console.firebase.google.com/ lukc-ecarrito-npx versión 8.6.8
+La librería de estilos utilizada es Material UI: https://material-ui.com versión 4.11.4
+La base de datos utilizada es Firebase: https://console.firebase.google.com/ versión 8.6.8
 
 ### Instalación
-
 ```
-git clone 
+git clone <https://github.com/nombreDeUsuario/nombredDelRepositorio>
 npm i
 npm start
 ```
 
-Ver online: https://guileless-pithivier-0cc0ac.netlify.app/
+Ver online: https://ephemeral-kelpie-08c118.netlify.app/
 
 ### Preview del proyecto
 
@@ -81,7 +76,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
 ## ¡Muchas gracias por visitar mi espacio!
-Comenta a otros sobre este proyecto 📢.
-Dejame tus opiniones.
+Comenta a otros sobre este proyecto.
+📢 Dejame tus opiniones.
 O escribime: lucreciaroa@hotmail.com.
-📌 Sitio Web _luk_c https://lroa28.github.io/GitLROA/
+📌 Sitio Web completo del emprendimiento "_luk_c" https://lroa28.github.io/GitLROA/

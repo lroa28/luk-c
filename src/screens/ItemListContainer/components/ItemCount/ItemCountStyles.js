@@ -20,11 +20,9 @@ export const ItemCountStyles = ((theme) => ({
         alignItems: 'center',
         marginTop: -10,
     },
-
     button: {
         borderRightColor: '#C4C4C4 !important',
     },
-
     texto: {
         textAlign: 'center', 
         paddingTop: 5,
